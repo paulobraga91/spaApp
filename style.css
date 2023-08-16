@@ -12,7 +12,8 @@ body{
     background-image: url("./imgs/mountains-universe-1.png");
     background-size: cover;
     background-repeat: no-repeat;
-    height: 100vh;
+    background-position: center center;
+    min-height: 100vh;
     font-family: roboto;
     color: white;
 }
@@ -33,13 +34,25 @@ nav a{
     color: white;
 }
 
+.pageSelected{
+    font-weight: 700;
+    font-weight: bold;
+}
+
 .screen1{
-    display: grid;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-    margin: 4rem;
     height: 100vh;
+}
+
+.screen2{
+    padding: 18.5rem 0 0 10rem;
+    gap: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
 button{
@@ -53,6 +66,7 @@ button{
     border: 2px solid #FFF;
     font-weight: 700;
     line-height: 2.4rem;
+    margin: 6rem 11rem;  
     
 }
 
@@ -70,3 +84,9 @@ h1{
     font-weight: 700;
     line-height: 125% 
 }
+
+p{
+font-size: 1.8rem;
+width: 64rem;
+}
+
